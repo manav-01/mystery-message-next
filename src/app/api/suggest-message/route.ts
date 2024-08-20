@@ -41,7 +41,7 @@ export async function POST(req: Request) {
         // })
         // console.log(text);
         // GoogleGenerativeAIStream(result);
-        return new StreamingTextResponse(ressult);
+        return (result);
 
     } catch (error) {
 
