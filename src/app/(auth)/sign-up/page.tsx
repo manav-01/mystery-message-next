@@ -24,7 +24,7 @@ import { useRouter } from "next/navigation";
 import { signUpSchema } from "@/schemas/signUpSchema";
 import { ApiError } from "next/dist/server/api-utils";
 
-export default function signUpForm() {
+export default function SignUpForm() {
   const [username, setUsername] = useState("");
   // For set error message from the DB and Zod
   const [usernameMessage, setUsernameMessage] = useState("");
