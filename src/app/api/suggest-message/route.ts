@@ -1,3 +1,4 @@
+/*
 import { google } from '@ai-sdk/google';
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { generateText, StreamingTextResponse, streamText } from 'ai';
@@ -47,6 +48,8 @@ export async function POST(req: Request) {
 
     }
 }
+
+*/
 
 
 
