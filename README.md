@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### **Project Name**: True Feedback - Anonymous Message Platform
 
-## Getting Started
+#### **Project Motto**:
+"Unfiltered, Anonymous, True Feedback."
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### **Project Description**:
+True Feedback is an anonymous messaging platform designed to provide users with honest, anonymous feedback. Users can register to receive a unique URL, which they can share with others. Anyone with this URL can send feedback anonymously, encouraging open and honest communication. With a user-friendly toggle option, registered users can control when they’re available to respond to messages, ensuring feedback is manageable and timely. Built with Next.js, Mongoose, Next-Auth, and Radix UI components, this project emphasizes simplicity, security, and an intuitive user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# True Feedback - Anonymous Messaging Platform
 
-## Learn More
+## Description
+True Feedback is a Next.js-based platform enabling anonymous feedback exchange. Registered users are given a unique link that allows others to send them messages anonymously, making it ideal for feedback, suggestions, or open communication. Users can toggle message reception on and off, retaining control over when they’re open to receiving feedback. The app focuses on creating a seamless, secure, and user-friendly experience.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
+- **Anonymous Feedback**: Anyone with a user’s unique URL can send feedback anonymously.
+- **Toggle Visibility**: Users can control message reception by toggling an option to activate or deactivate their feedback link.
+- **Secure Authentication**: Next-Auth is used to secure user accounts and ensure data privacy.
+- **Customizable Notifications**: Users are notified of incoming messages and can choose to respond.
+- **Responsive UI**: Built with Radix UI and TailwindCSS, offering a smooth and responsive interface across devices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/manav-01/true-feedback.git
+   cd true-feedback
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Environment Variables**:
+   Create a `.env.local` file in the root directory and add the following variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```plaintext
+   MONGODB_URI=your_mongo_connection_string
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your_nextauth_secret
+   RESEND_API_KEY=your_resend_api_key
+   ```
+
+4. **Run the application**:
+   ```bash
+   npm run dev
+   ```
+
+   The app will be accessible at `http://localhost:3000`.
+
+## Tech Stack
+- **Next.js**: Application framework
+- **React**: Front-end library
+- **Mongoose**: MongoDB ORM
+- **Next-Auth**: User authentication
+- **Radix UI**: UI components
+- **React Hook Form**: For streamlined form management
+- **TailwindCSS**: Custom styling
+- **TinyMCE**: Optional rich text for user responses
+- **Zod**: Schema validation
+- **Resend**: Email notifications
+
+## Usage
+
+1. **Sign Up**: Register to receive your unique URL.
+2. **Share URL**: Share your unique URL with others to receive anonymous feedback.
+3. **Control Feedback**: Use the toggle button to activate or deactivate message reception as desired.
+4. **Manage Messages**: View messages from your account dashboard and respond as necessary.
+
+## Contribution
+We welcome contributions! Please fork the repo, create a branch for your feature, and submit a pull request. Contributions to improve security, features, and UI are particularly welcome.
+
+## License
+This project is open-source and available under the MIT License.
